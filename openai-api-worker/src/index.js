@@ -13,7 +13,8 @@ export default {
 		}
 		
 		const openai = new OpenAI({
-			apiKey:env.OPENAI_API_KEY
+			apiKey:env.OPENAI_API_KEY,
+			baseURL:"https://gateway.ai.cloudflare.com/v1/ab8c64c04d1f77f21d7ba13bc943bf38/stock_prediction/openai"
 		})
 		
 		try{
